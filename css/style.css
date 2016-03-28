@@ -1,6 +1,6 @@
 
 .member-grid {
-  background-color: pink;
+  background-color: white;
   min-height: 100px;
 
   display: flex;
@@ -8,10 +8,38 @@
 }
 
 .member-btn {
-  flex: 0 0 30%;
-  height: 125px;
-  margin-right: 3%;
+  flex: 0 0 28%;
+  padding: 5px;
+  min-height: 125px;
+  margin-right: 2%;
   margin-bottom: 10px;
-  display: inline;
-  background-color: blue;
+  background-color: #DDD;
+
+  -webkit-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.25);
+  box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.25);
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.member-btn:hover {
+  background-color: #999;
+}
+
+.member-name {
+  border-top: 1px solid white;
+  text-align: center;
+  flex: 0;
+  margin: 0px;
+  background-color: inherit;
+}
+
+.member-img-container {
+  flex: 1;
+  background-color: inherit;
+}
+
+.member-img {
+  width: 100%;
 }
